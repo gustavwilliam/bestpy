@@ -41,7 +41,7 @@ Fermat
 >>> best.name
 Gustav
 ```
-At the end of the day, I'd recommend just playing around with it and seeing what's available. We'll be adding a lot of fun categories, but if there's something you'd like to see added, feel free to open an issue or submit a PR. The available categories will expand over time, thanks to out awesome contributors.
+At the end of the day, I'd recommend just playing around with it and seeing what's available. We'll be adding a lot of fun categories. If there's something you'd like to see added, feel free to open an issue or submit a PR. The available categories will expand over time, thanks to our awesome contributors.
 
 ## Final words
 Good luck proving what things are actually best. Bestpy is never wrong, so you now know everything you need to use the single source of truth. Feel free to share what you create with bestpy; I can't wait to see what you do.
