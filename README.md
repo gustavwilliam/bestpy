@@ -3,12 +3,14 @@ A module to prove your friends (or adversaries) wrong.
 
 Ever needed to decide on what is the best thing out? That's exactly what bestpy does.
 We may or may not try to make the answers support your view. Here's a quick demo:
+
 ```python
 >>> best.language
 "python"
 >>> best.module
 "bestpy"
 ```
+
 ## Installation
 This is simple with pip. Just run the following in your command line or terminal (available soon):
 ```
@@ -17,6 +19,7 @@ pip install bestpy
 
 You can also use your magic powers to get the module from source code. 
 By using 
+
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
 ```
@@ -24,22 +27,29 @@ pip install git+https://github.com/gustavwilliam/bestpy.git@main
 ## Basic usage
 Instead of doing `import bestpy`, we felt like saving you from typing two extra characters every time.
 Just do the following to import bestpy, once the installation is complete:
+
 ```python
 >>> import best
 ```
+
 Here's how you can find out some hard coded, fundamental laws of the universe:
+
 ```py
 >>> best.language
 "python"
 >>> best.module
 "bestpy"
 ```
+
 There are also a few things that may sneakily check your preferences and adjust based on it, like the following.
 You'll get your current OS back, since you obviously have a good taste in what OS you use.
+
 ```python
 >>> best.os
 ```
+
 There are also a few ones that use randomness to find the truth, like this:
+
 ```py
 >>> best.name
 Guido
@@ -48,6 +58,7 @@ Fermat
 >>> best.name
 Gustav
 ```
+
 At the end of the day, I'd recommend just playing around with it and seeing what's available.
 We'll be adding a lot of fun categories. If there's something you'd like to see added,
 feel free to open an issue or submit a PR. The available categories will expand over time,
