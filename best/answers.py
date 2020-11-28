@@ -1,31 +1,34 @@
 import platform
 
-from typing import List
+
+class CodeAnswers:
+    """Class for answers that require code execution on every access"""
+
+    def __init__(self):
+        pass
+
+    @staticmethod
+    def os() -> str:
+        name = platform.system()
+
+        # Replacing "Darwin", since it might be confusing for macOS users
+        if name == "Darwin":
+            name = "macOS"
+
+        return name
 
 
-def language() -> List[str]:
-    return [
-        "Python",
-    ]
+answers = {
+    # region: Tech
+    "language": "Python",
+    "package": "Bestpy",
+    "os": CodeAnswers.os,
+    "phone": ["iPhone", "Nokia", "OnePlus", "Huawei", "Samsung Galaxy", "Blackberry", "Google Pixel", "Sony Experia"],
+    # endregion
 
-
-def package() -> List[str]:
-    return [
-        "Bestpy",
-    ]
-
-
-def os() -> List[str]:
-    name = platform.system()
-
-    # Replacing "Darwin", since it might be confusing for macOS users
-    if name == "Darwin":
-        name = "macOS"
-
-    return [
-        name,
-    ]
-
-
-def year() -> List[int]:
-    return list(range(2100))
+    # region: Time
+    "year": list(range(2100)),
+    "month": ["january", "february", "march", "april", "may", "june", "july", "august", "september", "october",
+              "november", "december"],
+    # endregion
+}
