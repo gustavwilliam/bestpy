@@ -20,7 +20,7 @@ class Best:
         pass
 
     def __getattr__(self, item):
-        return _get_answer(item)
+        return _get_answer(item.lower())
 
 
 best = Best()
