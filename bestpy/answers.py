@@ -1,5 +1,14 @@
 import platform
 
+from typing import Type
+
+
+def add_from_class(cls: Type, target_dict: dict) -> None:
+    """Adds the methods of the specified class to the target dict, if it doesn't start with '_'."""
+    method_names = [name for name in dir(cls) if not name.startswith("_")]  # Only methods that don't start with _
+    answer_methods = {name: getattr(cls, name) for name in method_names}
+    target_dict.update(answer_methods)
+
 
 class CodeAnswers:
     """Class for answers that require code execution on every access"""
@@ -22,7 +31,6 @@ answers = {
     # region: Tech
     "language": "Python",
     "package": "Bestpy",
-    "os": CodeAnswers.os,
     "phone": ["iPhone", "Nokia", "OnePlus", "Huawei", "Samsung Galaxy", "BlackBerry", "Google Pixel", "Sony Experia"],
     # endregion
 
@@ -32,3 +40,6 @@ answers = {
               "november", "december"],
     # endregion
 }
+
+
+add_from_class(CodeAnswers, answers)
