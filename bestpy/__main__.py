@@ -1,10 +1,10 @@
 import random
 
-from bestpy import answers
+from bestpy.answers import answers
 
 
 def _get_answer(category):
-    options = answers.answers.get(category)
+    options = answers.get(category)
 
     if callable(options):
         options = options()
@@ -13,3 +13,14 @@ def _get_answer(category):
         return random.choice(options)
 
     return options
+
+
+class Best:
+    def __init__(self):
+        pass
+
+    def __getattr__(self, item):
+        return _get_answer(item)
+
+
+best = Best()
