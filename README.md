@@ -17,10 +17,12 @@ pip install bestpy
 You can also use your magic powers to get the module from source code. Though we won't be guiding you with that hokus-pokus here. Ask a friend if your powers aren't strong enough.
 
 ## Basic usage
-Instead of doing `import bestpy`, we felt like saving you from typing two extra characters every time. Just do the following to import bestpy, once the installation is complete:
+We were kind and made importing it super simple and nice. Just do the following to import bestpy, once the installation is complete:
 ```python
->>> import best
+>>> from bestpy import best
 ```
+Now you'll be ready to take on any of life's greatest challenges, all with the help of bestpy.
+
 Here's how you can find out some hard coded, fundamental laws of the universe:
 ```py
 >>> best.language
