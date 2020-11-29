@@ -36,6 +36,11 @@ answers = {
     "phone": ["iPhone", "Nokia", "OnePlus", "Huawei", "Samsung Galaxy", "BlackBerry", "Google Pixel", "Sony Experia"],
     "company": ["Apple", "Samsung", "Nokia", "Google", "Facebook", "Microsoft", "Sony", "Huawei", "IBM", "Intel",
                 "Adobe", "Cisco", "Dell", "Oracle", "Klurio"],
+    "ide": ["PyCharm", "Thonny", "Spyder", "Atom", "VSCode", "Sublime Text", "Vim", "NeoVim", "Emacs", "Vi", "Nano",
+            "Notepad", "IDLE", "Notepad++", "Elvis", "TextEdit"],
+    "developer": ["Guido van Rossum", "Vestergurkan", "Gustav", "Dennis Ritchie", "Bjarne Stroustrup",
+                  "James Gosling", "Linus Torvalds", "Anders Hejlsberg", "Brian Kernighan", "Ken Thompson",
+                  "Donald Knuth", "Steve Wozniak", "Richard Stallman"],
     # endregion
 
     # region: Education
@@ -47,6 +52,10 @@ answers = {
     "gpa": [4.0, 5.0],
     "enter": 99.9,
     "gcse": 9,
+    "school": ["Harvard University", "MIT", "Stanford University", "Oxford University", "Yale University", "Chalmers",
+                "KTH", "Princeton University", "University of Michigan", "Cornell University", "TU Delft",
+                "UC Berkeley"],
+    "learning_method": ["active recall", "spaced repetition", "deep thinking"],
     # endregion
 
     # region: Time
