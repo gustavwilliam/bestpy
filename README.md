@@ -17,12 +17,13 @@ This is simple with pip. Just run the following in your command line or terminal
 pip install bestpy
 ```
 
-You can also use your magic powers to get the module from source code. 
-By using 
+You can also use your magic powers to get the module from source code with the following:
 
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
-```
+
+# Note: you will likely need to restart your terminal before using the module
+``` 
 
 ## Basic usage
 Instead of doing `import bestpy`, we felt like saving you from typing two extra characters every time.
