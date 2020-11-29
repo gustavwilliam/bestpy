@@ -25,12 +25,12 @@ Now you'll be ready to take on any of life's greatest challenges, all with the h
 
 Here's how you can find out some hard coded, fundamental laws of the universe:
 ```py
->>> best.language
-"python"
->>> best.module
-"bestpy"
+>>> best.year
+1984
+>>> best.phone
+BlackBerry
 ```
-There are also a few things that may sneakily check your preferences and adjust based on it, like the following. You'll get your current OS back, since you obviously have a good taste in what OS you use.
+There are also a few things that may sneakily check your preferences and adjust based on it, like the following example. You'll get your current OS back, since you obviously have a good taste in what OS you use.
 ```python
 >>> best.os
 ```
@@ -38,8 +38,6 @@ There are also a few ones that use randomness to find the truth, like this:
 ```py
 >>> best.name
 Guido
->>> best.name
-Fermat
 >>> best.name
 Gustav
 ```
