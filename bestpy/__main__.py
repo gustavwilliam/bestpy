@@ -1,6 +1,6 @@
 import random
 
-from best import answers
+from bestpy import answers
 
 
 def get_answer(category):
