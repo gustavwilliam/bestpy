@@ -3,7 +3,7 @@ import random
 from bestpy import answers
 
 
-def get_answer(category):
+def _get_answer(category):
     options = answers.answers.get(category)
 
     if callable(options):
