@@ -23,7 +23,7 @@ answers = {
     "language": "Python",
     "package": "Bestpy",
     "os": CodeAnswers.os,
-    "phone": ["iPhone", "Nokia", "OnePlus", "Huawei", "Samsung Galaxy", "Blackberry", "Google Pixel", "Sony Experia"],
+    "phone": ["iPhone", "Nokia", "OnePlus", "Huawei", "Samsung Galaxy", "BlackBerry", "Google Pixel", "Sony Experia"],
     # endregion
 
     # region: Time
