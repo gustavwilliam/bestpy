@@ -13,32 +13,34 @@ We may or may not try to make the answers support your view. Here's a quick demo
 
 ## Installation
 This is simple with pip. Just run the following in your command line or terminal (available soon):
+
 ```
 pip install bestpy
 ```
 
 You can also use your magic powers to get the module from source code. 
-By using 
+By using: 
 
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
 ```
 
 ## Basic usage
-Instead of doing `import bestpy`, we felt like saving you from typing two extra characters every time.
-Just do the following to import bestpy, once the installation is complete:
+We were kind and made importing it super simple and nice. Just do the following to import bestpy, once the installation is complete:
 
 ```python
->>> import best
+>>> from bestpy import best
 ```
+
+Now you'll be ready to take on any of life's greatest challenges, all with the help of bestpy.
 
 Here's how you can find out some hard coded, fundamental laws of the universe:
 
 ```py
->>> best.language
-"python"
->>> best.module
-"bestpy"
+>>> best.year
+1984
+>>> best.phone
+BlackBerry
 ```
 
 There are also a few things that may sneakily check your preferences and adjust based on it, like the following.
@@ -53,8 +55,6 @@ There are also a few ones that use randomness to find the truth, like this:
 ```py
 >>> best.name
 Guido
->>> best.name
-Fermat
 >>> best.name
 Gustav
 ```
