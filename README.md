@@ -23,8 +23,8 @@ You can also use your magic powers to get the module from source code with the f
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
 
-# Note: you will likely need to restart your terminal before using the module
 ``` 
+Note: you will likely need to restart your terminal before using the module
 
 ## Basic usage
 We were kind and made importing it super simple and nice. Just do the following to import bestpy, once the installation is complete:
