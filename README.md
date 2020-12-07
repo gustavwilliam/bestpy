@@ -22,7 +22,6 @@ You can also use your magic powers to get the module from source code with the f
 
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
-
 ``` 
 Note: you will likely need to restart your terminal before using the module
 
