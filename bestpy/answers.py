@@ -53,8 +53,8 @@ answers = {
     "enter": 99.9,
     "gcse": 9,
     "school": ["Harvard University", "MIT", "Stanford University", "Oxford University", "Yale University", "Chalmers",
-                "KTH", "Princeton University", "University of Michigan", "Cornell University", "TU Delft",
-                "UC Berkeley"],
+               "KTH", "Princeton University", "University of Michigan", "Cornell University", "TU Delft",
+               "UC Berkeley"],
     "learning_method": ["active recall", "spaced repetition", "deep thinking"],
     # endregion
 
