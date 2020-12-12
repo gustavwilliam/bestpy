@@ -114,6 +114,7 @@ answers = {
         "Steve Wozniak",
         "Richard Stallman",
     ],
+
     # endregion
     # region: Education
     "subject": [
