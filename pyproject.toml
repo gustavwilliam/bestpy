@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bestpy"
+version = "0.0.1"
+description = "A package to find out what's best"
+authors = ["Gustav Odinger"]
+license = "License :: OSI Approved :: MIT License"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+pre-commit = "^2.9.3"
+
+[tool.poetry.dev-dependencies]
+flake8 = "^3.8.4"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
