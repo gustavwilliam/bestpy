@@ -2,7 +2,7 @@
 max-line-length=120
 docstring-convention=all
 import-order-style=pycharm
-exclude=constants.py,__pycache__,.cache,
+exclude=__pycache__,.cache,
         .git,
         .md,.svg,.png
         tests,
