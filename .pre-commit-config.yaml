@@ -19,8 +19,8 @@ repos:
     hooks:
       - id: flake8
         args:
-          - bot
+          - bestpy
         name: Flake8
-        entry: pipenv run flake8
+        entry: poetry run flake8
         language: system
         types: [ python ]
