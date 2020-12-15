@@ -13,5 +13,3 @@ class Best:
             return answers[name]()
         else:
             return answers[name]
-      
-    
