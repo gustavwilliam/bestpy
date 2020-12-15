@@ -10,4 +10,4 @@ class Best:
             answer = answers[name]()
         if isinstance(answers, list):
             return random.choice(answers[name])
-        return answers[name]
+        return answer
