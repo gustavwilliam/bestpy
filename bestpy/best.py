@@ -6,8 +6,9 @@ import random
 class Best:
     def __getattribute__(self, name):
         answer = answers[name]
-        if callable(answers[name]):
-            answer = answers[name]()
+        if callable(answer):
+            answer = answer()
+            
         if isinstance(answers, list):
-            return random.choice(answers[name])
+            return random.choice(answer)
         return answer
