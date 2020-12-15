@@ -9,7 +9,7 @@ class Best:
         if isinstance(answers[name], list):
             return random.choice(answers[name])
         # Call function
-    elif callable(answers[name]):
+        elif callable(answers[name]):
             return answers[name]()
         else:
             return answers[name]
