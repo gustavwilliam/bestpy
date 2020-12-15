@@ -62,6 +62,7 @@ answers = {
         "Dell",
         "Oracle",
         "Klurio",
+        "McDonald's",
     ],
     "ide": [
         "PyCharm",
