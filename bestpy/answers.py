@@ -1,32 +1,14 @@
 import platform
 
-from typing import Type
 
+def os() -> str:
+    name = platform.system()
 
-def add_from_class(cls: Type, target_dict: dict) -> None:
-    """Adds the methods of the specified class to the target dict, if it doesn't start with '_'."""
-    method_names = [
-        name for name in dir(cls) if not name.startswith("_")
-    ]  # Only methods that don't start with _
-    answer_methods = {name: getattr(cls, name) for name in method_names}
-    target_dict.update(answer_methods)
+    # Replacing "Darwin", since it might be confusing for macOS users
+    if name == "Darwin":
+        name = "macOS"
 
-
-class CodeAnswers:
-    """Class for answers that require code execution on every access"""
-
-    def __init__(self):
-        pass
-
-    @staticmethod
-    def os() -> str:
-        name = platform.system()
-
-        # Replacing "Darwin", since it might be confusing for macOS users
-        if name == "Darwin":
-            name = "macOS"
-
-        return name
+    return name
 
 
 answers = {
@@ -114,7 +96,6 @@ answers = {
         "Steve Wozniak",
         "Richard Stallman",
     ],
-
     # endregion
     # region: Education
     "subject": [
@@ -200,7 +181,5 @@ answers = {
     ],
     "week": list(range(1, 53)),
     # endregion
+    "os": os,
 }
-
-
-add_from_class(CodeAnswers, answers)
