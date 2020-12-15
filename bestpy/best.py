@@ -9,7 +9,7 @@ class Best:
         if isinstance(answers[name], list):
             return random.choice(answers[name])
         # Call function
-        elif isinstance(answers[name], function):
+        elif type(answers[name]).__name__ == "function":
             return answers[name]()
         else:
             return answers[name]
