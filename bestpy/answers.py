@@ -1,3 +1,14 @@
+import platform
+
+def os() -> str:
+    name = platform.system()
+
+    # Replacing "Darwin", since it might be confusing for macOS users
+    if name == "Darwin":
+        name = "macOS"
+
+    return name
+
 answers = {
     # region: Tech
     "language": "Python",
@@ -169,4 +180,5 @@ answers = {
     ],
     "week": list(range(1, 53)),
     # endregion
+    "os": os
 }
