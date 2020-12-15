@@ -1,5 +1,6 @@
 import platform
 
+
 def os() -> str:
     name = platform.system()
 
@@ -8,6 +9,7 @@ def os() -> str:
         name = "macOS"
 
     return name
+
 
 answers = {
     # region: Tech
@@ -94,7 +96,6 @@ answers = {
         "Steve Wozniak",
         "Richard Stallman",
     ],
-
     # endregion
     # region: Education
     "subject": [
@@ -180,5 +181,5 @@ answers = {
     ],
     "week": list(range(1, 53)),
     # endregion
-    "os": os
+    "os": os,
 }
