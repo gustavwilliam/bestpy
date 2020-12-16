@@ -9,6 +9,6 @@ class Best:
         if callable(answer):
             answer = answer()
 
-        if isinstance(answers, list):
+        if isinstance(answer, list):
             return random.choice(answer)
         return answer
