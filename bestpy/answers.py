@@ -140,7 +140,7 @@ answers = {
         "Xbox 360",
         "Wii",
         "PlayStation 2",
-        "PlayStation"
+        "PlayStation",
         "Xbox",
         "Gamecube"
     ]
