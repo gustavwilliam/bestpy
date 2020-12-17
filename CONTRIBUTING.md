@@ -14,3 +14,13 @@ poetry shell
 # install pre-commit hooks
 pre-commit install
 ```
+
+# Testing
+```
+# can be done using
+poetry run pytest
+
+# or in the poetry shell
+poetry shell
+pytest
+```
