@@ -183,4 +183,5 @@ answers = {
     "week": list(range(1, 53)),
     # endregion
     "os": os,
+    "cult": "Gurkult",
 }
