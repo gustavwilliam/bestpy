@@ -1,3 +1,3 @@
-from .best import Best
+from .best_class import Best
 
 best = Best()
