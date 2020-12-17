@@ -143,7 +143,7 @@ answers = {
         "PlayStation",
         "Xbox",
         "Gamecube"
-    ]
+    ],
     "grade": "A+",
     "gpa": [4.0, 5.0],
     "enter": 99.9,
