@@ -9,8 +9,8 @@ class Best:
         answer = answers[name]
 
         if callable(answer):
-            return answer()
+            answer = answer()
         elif isinstance(answer, abc.Sequence):
-            return random.choice(answer)
+            answer = random.choice(answer)
 
         return answer
