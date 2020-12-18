@@ -1,0 +1,44 @@
+name: Build & Push
+
+
+on:
+  push:
+    branches: [ release ]
+      
+  workflow_dispatch:
+
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: Setup Python
+        id: python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8.6
+      
+      
+      # Install the needed build tools
+      - name: Install build tools
+        run: pip install poetry setuptools wheel poetry-version
+
+      - name: Push PyPi Package! 
+        run: poetry publish --build -u ${{ secrets.PYPI_USERNAME }} -p ${{ secrets.PYPI_PASSWORD }}
+      
+      - name: Set tag number
+        run: echo TAG=$(python -c 'print("v" + __import__("poetry_version").extract("$GITHUB_WORKSPACE/bestpy"))') >> $GITHUB_ENV
+      
+      - name: Push GitHub Release!
+        uses: actions/create-release@v1
+        env: 
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.TAG }}
+          release_name: Release ${{ env.TAG }}
+          draft: true
+          prerelease: false
+          
