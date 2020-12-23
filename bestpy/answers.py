@@ -165,7 +165,7 @@ answers = {
     "learning_method": ["active recall", "spaced repetition", "deep thinking"],
     # endregion
     # region: Time
-    "year": list(range(2100)),
+    "year": range(2100),
     "month": [
         "january",
         "february",
@@ -180,7 +180,7 @@ answers = {
         "november",
         "december",
     ],
-    "date": list(range(1, 32)),
+    "date": range(1, 32),
     "weekday": ["monday", "tuesday", "wednesday", "thursday", "friday"],
     "day": [
         "monday",
@@ -202,7 +202,7 @@ answers = {
         "space age",
         "information age",
     ],
-    "week": list(range(1, 53)),
+    "week": range(1, 53),
     # endregion
     "os": os,
     "cult": "Gurkult",
