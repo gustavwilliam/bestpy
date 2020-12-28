@@ -24,3 +24,11 @@ repos:
         entry: poetry run flake8
         language: system
         types: [ python ]
+
+      - id: pytest
+        #args:
+          #- tests/
+        name: Pytest
+        entry: poetry run pytest
+        language: system
+        types: [ python ]
