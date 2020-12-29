@@ -16,11 +16,14 @@ pre-commit install
 ```
 
 # Testing
+Directly in the terminal:
 ```
-# can be done using
 poetry run pytest
+```
 
-# or in the poetry shell
+In the Poetry shell, through the terminal:
+
+```
 poetry shell
 pytest
 ```
