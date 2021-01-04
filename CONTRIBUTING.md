@@ -14,3 +14,16 @@ poetry shell
 # install pre-commit hooks
 pre-commit install
 ```
+
+# Testing
+Directly in the terminal:
+```
+poetry run pytest
+```
+
+In the Poetry shell, through the terminal:
+
+```
+poetry shell
+pytest
+```
