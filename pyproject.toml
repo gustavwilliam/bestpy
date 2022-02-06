@@ -2,8 +2,11 @@
 name = "bestpy"
 version = "0.0.1"
 description = "A package to find out what's best"
+readme = "README.md"
+homepage = "https://github.com/gustavwilliam/bestpy"
+repository = "https://github.com/gustavwilliam/bestpy"
 authors = ["Gustav Odinger"]
-license = "License :: OSI Approved :: MIT License"
+license = "MIT"
 
 [tool.poetry.dependencies]
 python = "^3.8"
