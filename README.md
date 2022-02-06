@@ -1,4 +1,7 @@
 # bestpy
+
+
+
 A module to prove your friends (or adversaries) wrong.
 
 Ever needed to decide on what is the best thing out? That's exactly what bestpy does.
@@ -11,14 +14,25 @@ We may or may not try to make the answers support your view. Here's a quick demo
 "bestpy"
 ```
 
+<details>
+<summary>Table of content</summary>
+
+## Table of content
+
+- [Installation](#installation)<br>
+- [Basic usage](#basic-usage)<br>
+- [Final words](#final-words)
+
+</details>
+
 ## Installation
-This is simple with pip. Just run the following in your command line or terminal (available soon):
+This is simple with pip. Just run the following in your command line or terminal:
 
 ```
 pip install bestpy
 ```
 
-You can also use your magic powers to get the module from source code with the following:
+You can also use your magic powers to get the module from the latest version of the source code using the following:
 
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
@@ -67,6 +81,6 @@ thanks to our awesome contributors.
 ## Final words
 Good luck proving what things are actually best. Bestpy is never wrong,
 so you now know everything you need to use the single source of truth. 
-Feel free to share what you create with bestpy; I can't wait to see what you do.
+Feel free to share what you create with bestpy. I can't wait to see what you do!
 
 May the bestpy be with you. The bestpy is strong with this one.
