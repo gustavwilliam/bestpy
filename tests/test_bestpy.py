@@ -11,17 +11,17 @@ NORMAL_ANSWERS = best_class.answers
 best = best_class.Best()
 
 
-# the reason for these 2 functions is to allow the answer data to change,
-# but still allow the tests to pass aslong as the Best class works correctly.
-# assuming the format of the answer data does not change,
+# The reason for these 2 functions is to allow the answer data to change,
+# but still allow the tests to pass as long as the Best class works correctly.
+# Assuming the format of the answer data does not change,
 # if it does the tests should be updated to reflect this.
 def setup_function(function):
-    # mock answers
+    # Mock answers
     best_class.answers = MOCK_ANSWERS
 
 
 def teardown_function(function):
-    # restor answers
+    # Restore answers
     best_class.answers = NORMAL_ANSWERS
 
 
