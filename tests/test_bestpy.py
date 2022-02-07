@@ -1,29 +1,30 @@
 from unittest.mock import Mock
-from bestpy import best_class
-from bestpy import answers
+from bestpy.best_class import Best
+from bestpy.answers import answers as normal_answers
 
-method_mock = Mock(return_value="result")
+mock_method = Mock(return_value="result")
 MOCK_ANSWERS = {
     "static": "static",
     "list": ["a", "b", "c"],
-    "method": method_mock
+    "method": mock_method
 }
-NORMAL_ANSWERS = answers
-best = best_class.Best(MOCK_ANSWERS)
+
+# Initialize the mock instance of `Best`
+best = Best(MOCK_ANSWERS)
 
 
 # The reason for these 2 functions is to allow the answer data to change,
 # but still allow the tests to pass as long as the Best class works correctly.
 # Assuming the format of the answer data does not change,
 # if it does the tests should be updated to reflect this.
-def setup_function(function):
+def setup_function(_):
     # Mock answers
     best.answers = MOCK_ANSWERS
 
 
-def teardown_function(function):
+def teardown_function(_):
     # Restore answers
-    best.answers = NORMAL_ANSWERS
+    best.answers = normal_answers
 
 
 def test_static():
@@ -35,7 +36,7 @@ def test_list():
 
 
 def test_method():
-    method_mock.reset_mock()
+    mock_method.reset_mock()
 
     assert best.method == "result"
-    method_mock.assert_called_once()
+    mock_method.assert_called_once()
