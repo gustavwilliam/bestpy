@@ -21,9 +21,6 @@ We may or may not try to make the answers support your view. Here's a quick demo
 "bestpy"
 ```
 
-<details>
-<summary>Table of content</summary>
-
 ## Table of content
 
 - [Installation](#installation)<br>
@@ -31,8 +28,6 @@ We may or may not try to make the answers support your view. Here's a quick demo
 - [Basic usage](#basic-usage)<br>
 - [Contributing](#contributing)<br>
 - [Final words](#final-words)
-
-</details>
 
 ## Installation
 This is simple with pip. Just run the following in your command line or terminal:
