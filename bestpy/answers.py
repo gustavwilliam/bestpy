@@ -118,6 +118,26 @@ answers = {
         "Richard Stallman",
     ],
     "os": os,
+    "distro": [
+        "Ubuntu",
+        "Manjaro",
+        "Debian",
+        "Fedora Linux",
+        "Arch Linux",
+        "Deepin",
+        "CentOS",
+        "SUSE Linux",
+        "Kubuntu",
+        "Bodhi Linux",
+        "Parrot OS",
+        "Mageia",
+        "Peppermint OS",
+        "NixOS",
+        "Void Linux",
+        "Alpine Linux",
+        "Element OS",
+        "Red Hat Enterprise Linux",
+    ],
     # endregion
     # region: Education
     "subject": [
