@@ -1,5 +1,6 @@
 from unittest.mock import Mock
 from bestpy import best_class
+from bestpy import answers
 
 method_mock = Mock(return_value="result")
 MOCK_ANSWERS = {
@@ -7,8 +8,8 @@ MOCK_ANSWERS = {
     "list": ["a", "b", "c"],
     "method": method_mock
 }
-NORMAL_ANSWERS = best_class.answers
-best = best_class.Best()
+NORMAL_ANSWERS = answers
+best = best_class.Best(MOCK_ANSWERS)
 
 
 # The reason for these 2 functions is to allow the answer data to change,
@@ -17,12 +18,12 @@ best = best_class.Best()
 # if it does the tests should be updated to reflect this.
 def setup_function(function):
     # Mock answers
-    best_class.answers = MOCK_ANSWERS
+    best.answers = MOCK_ANSWERS
 
 
 def teardown_function(function):
     # Restore answers
-    best_class.answers = NORMAL_ANSWERS
+    best.answers = NORMAL_ANSWERS
 
 
 def test_static():
