@@ -1,12 +1,16 @@
 import random
 from collections import abc
 
-from .answers import answers
-
 
 class Best:
+    def __init__(self, answers):
+        self._answers = answers
+
     def __getattribute__(self, name):
+        # `self.answers`, but prevents `RecursionError` from being raised
+        answers = object.__getattribute__(self, "_answers")
         answer = answers.get(name)
+
         if answer is None:
             # Ensure that attributes that aren't answers are also accessible
             # and throw AttributeError if nothing is found
