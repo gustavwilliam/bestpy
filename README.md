@@ -4,6 +4,7 @@
 [![Linting](https://github.com/gustavwilliam/bestpy/actions/workflows/linting.yaml/badge.svg?branch=main)](https://github.com/gustavwilliam/bestpy/actions/workflows/linting.yaml)
 [![Testing](https://github.com/gustavwilliam/bestpy/actions/workflows/testing.yaml/badge.svg?branch=main)](https://github.com/gustavwilliam/bestpy/actions/workflows/testing.yaml)
 [![Build & Push](https://github.com/gustavwilliam/bestpy/actions/workflows/publish.yml/badge.svg)](https://github.com/gustavwilliam/bestpy/actions/workflows/publish.yml)
+[![Coverage Status](https://coveralls.io/repos/github/gustavwilliam/bestpy/badge.svg?branch=main)](https://coveralls.io/github/gustavwilliam/bestpy?branch=main)
 [![GitHub stars](https://img.shields.io/github/stars/gustavwilliam/bestpy?style=social&label=Star&maxAge=2592000)](https://github.com/gustavwilliam/bestpy/stargazers/)
 
 A module to prove your friends (or adversaries) wrong.

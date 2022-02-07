@@ -24,6 +24,13 @@ jobs:
         run: |
           pip install poetry
           poetry install
-      - name: test with pytest
+
+      - name: Test with pytest and coverage.py
         run: |
-          poetry run pytest tests/
+          poetry run coverage run -m pytest tests/ -q
+          poetry run coverage report -m
+
+      - name: Publish coverage report to coveralls.io
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: poetry run coveralls --service=github
