@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "bestpy"
-version = "0.0.3"
+version = "0.0.4"
 description = "A package to find out what's best"
 readme = "README.md"
 homepage = "https://github.com/gustavwilliam/bestpy"
