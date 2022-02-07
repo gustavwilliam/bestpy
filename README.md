@@ -1,3 +1,5 @@
+![bestpy-image](bestpy-image.png)
+
 # bestpy
 
 [![License](https://badgen.net/github/license/gustavwilliam/bestpy)](https://github.com/gustavwilliam/bestpy/blob/main/LICENSE)
