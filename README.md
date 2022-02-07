@@ -25,7 +25,9 @@ We may or may not try to make the answers support your view. Here's a quick demo
 ## Table of content
 
 - [Installation](#installation)<br>
+  - [Dev installation](#dev-installation)<br>
 - [Basic usage](#basic-usage)<br>
+- [Contributing](#contributing)<br>
 - [Final words](#final-words)
 
 </details>
@@ -41,8 +43,11 @@ You can also use your magic powers to get the module from the latest version of 
 
 ```
 pip install git+https://github.com/gustavwilliam/bestpy.git@main
-``` 
+```
 Note: you will likely need to restart your terminal before using the module
+
+### Dev installation
+If you want to contribute to the bot, follow the [dev install instructions](CONTRIBUTING.md#dev-installation) instead.
 
 ## Basic usage
 We were kind and made importing it super simple and nice. Just do the following to import bestpy, once the installation is complete:
@@ -83,9 +88,16 @@ We'll be adding a lot of fun categories. If there's something you'd like to see 
 feel free to open an issue or submit a PR. The available categories will expand over time,
 thanks to our awesome contributors.
 
+## Contributing
+
+Fantastic that you want to be a part of the project! The project is actively maintained, and accepts issues and
+pull requests for bug fixes, new "answers" and improvements to the core functionality.
+
+Check out [CONTRIBUTING.md](CONTRIBUTING.md) to get started!
+
 ## Final words
 Good luck proving what things are actually best. Bestpy is never wrong,
-so you now know everything you need to use the single source of truth. 
+so you now know everything you need to use the single source of truth.
 Feel free to share what you create with bestpy. I can't wait to see what you do!
 
 May the bestpy be with you. The bestpy is strong with this one.
