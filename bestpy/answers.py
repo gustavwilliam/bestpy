@@ -117,6 +117,7 @@ answers = {
         "Steve Wozniak",
         "Richard Stallman",
     ],
+    "os": os,
     # endregion
     # region: Education
     "subject": [
@@ -224,6 +225,7 @@ answers = {
     ],
     "week": range(1, 53),
     # endregion
-    "os": os,
+    # region: Other
     "cult": "Gurkult",
+    # endregion
 }
