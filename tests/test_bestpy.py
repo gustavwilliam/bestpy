@@ -1,3 +1,4 @@
+from collections import abc
 from unittest.mock import Mock
 from bestpy.best_class import Best
 from bestpy.answers import answers as normal_answers
@@ -19,12 +20,12 @@ best = Best(MOCK_ANSWERS)
 # if it does the tests should be updated to reflect this.
 def setup_function(_):
     # Mock answers
-    best.answers = MOCK_ANSWERS
+    best._answers = MOCK_ANSWERS
 
 
 def teardown_function(_):
     # Restore answers
-    best.answers = normal_answers
+    best._answers = normal_answers
 
 
 def test_static():
@@ -40,3 +41,18 @@ def test_method():
 
     assert best.method == "result"
     mock_method.assert_called_once()
+
+
+def test_validate_answers():
+    """Checks if the normal answers produce errors."""
+    best._answers = normal_answers
+
+    for key, real_answer in normal_answers.items():
+        answer = getattr(best, key)
+
+        if isinstance(real_answer, abc.Sequence):
+            assert answer in real_answer
+        elif callable(real_answer):
+            pass  # Not sure how to automatically validate the responses of callables
+        else:
+            assert answer == real_answer
