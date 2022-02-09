@@ -39,3 +39,9 @@ class Best:
             raise AttributeError(error_message) from None
 
         return self._extract_answer(answer)
+
+    def __getitem__(self, item):
+        # Raises `KeyError` if the item is not supported
+        answer = self._answers[item]
+
+        return self._extract_answer(answer)
