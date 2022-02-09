@@ -29,6 +29,6 @@ repos:
         #args:
           #- tests/
         name: Pytest
-        entry: poetry run pytest
+        entry: poetry run python -m pytest tests/
         language: system
         types: [ python ]
