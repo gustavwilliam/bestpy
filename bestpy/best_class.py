@@ -6,15 +6,15 @@ class Best:
     def __init__(self, answers):
         self._answers = answers
 
-    def __getattribute__(self, name):
-        # `self.answers`, but prevents `RecursionError` from being raised
-        answers = object.__getattribute__(self, "_answers")
-        answer = answers.get(name)
+    def __getattr__(self, name):
+        try:
+            answer = self._answers[name]
+            print(answer)
+        except KeyError:
+            error_message = f"'{self.__class__.__name__}' object has no attribute '{name}'"
 
-        if answer is None:
-            # Ensure that attributes that aren't answers are also accessible
-            # and throw AttributeError if nothing is found
-            return object.__getattribute__(self, name)
+            # `from None` ensures that the error raised does not originate from the `KeyError` above
+            raise AttributeError(error_message) from None
 
         if callable(answer):
             answer = answer()
