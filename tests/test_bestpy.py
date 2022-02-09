@@ -63,3 +63,23 @@ def test_invalid_attribute():
     """Checks if invalid attributes raise `AttributeError`."""
     with pytest.raises(AttributeError):
         _ = best._this_attribute_does_not_exist
+
+
+def test_static_item():
+    assert best["static"] == "static"
+
+
+def test_list_item():
+    assert best["list"] in ["a", "b", "c"]
+
+
+def test_method_item():
+    mock_method.reset_mock()
+
+    assert best["method"] == "result"
+    mock_method.assert_called_once()
+
+
+def test_invalid_item():
+    with pytest.raises(KeyError):
+        _ = best["_this_key_does_not_exist"]
