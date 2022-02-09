@@ -80,10 +80,19 @@ Guido
 Gustav
 ```
 
-At the end of the day, I'd recommend just playing around with it and seeing what's available.
-We'll be adding a lot of fun categories. If there's something you'd like to see added,
-feel free to open an issue or submit a PR. The available categories will expand over time,
-thanks to our awesome contributors.
+### Different ways to access items
+
+You can access items through both attribute and item access.
+
+```python
+>>> best.module  # Attribute access
+bestpy
+>>> best["module"]  # Item access
+bestpy
+```
+
+If there's something you'd like to see added, feel free to open an issue or submit a PR.
+The available categories will expand over time, thanks to our awesome contributors.
 
 ## Contributing
 
