@@ -1,5 +1,6 @@
 from collections import abc
 from unittest.mock import Mock
+import pytest
 from bestpy.best_class import Best
 from bestpy.answers import answers as normal_answers
 
@@ -56,3 +57,9 @@ def test_validate_answers():
             pass  # Not sure how to automatically validate the responses of callables
         else:
             assert answer == real_answer
+
+
+def test_invalid_attribute():
+    """Checks if invalid attributes raise `AttributeError`."""
+    with pytest.raises(AttributeError):
+        _ = best._this_attribute_does_not_exist
