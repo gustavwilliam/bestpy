@@ -25,7 +25,11 @@ We may or may not try to make the answers support your view. Here's a quick demo
 
 - [Installation](#installation)<br>
   - [Dev installation](#dev-installation)<br>
-- [Basic usage](#basic-usage)<br>
+- [Usage](#usage)<br>
+  - [Different ways to access items](#different-ways-to-access-items)<br>
+  - [Hard coded answers](#hard-coded-answers)<br>
+  - [Dynamic answers](#dynamic-answers)<br>
+  - [Random answers](#random-answers)<br>
 - [Contributing](#contributing)<br>
 - [Final words](#final-words)
 
@@ -46,7 +50,7 @@ Note: you will likely need to restart your terminal before using the module
 ### Dev installation
 If you want to contribute to the bot, follow the [dev install instructions](CONTRIBUTING.md#dev-installation) instead.
 
-## Basic usage
+## Usage
 We were kind and made importing it super simple and nice. Just do the following to import bestpy, once the installation is complete:
 
 ```python
@@ -54,31 +58,6 @@ We were kind and made importing it super simple and nice. Just do the following 
 ```
 
 Now you'll be ready to take on any of life's greatest challenges, all with the help of bestpy.
-
-Here's how you can find out some hard coded, fundamental laws of the universe:
-
-```py
->>> best.year
-1984
->>> best.phone
-BlackBerry
-```
-
-There are also a few things that may sneakily check your preferences and adjust based on it, like the following.
-You'll get your current OS back, since you obviously have a good taste in what OS you use.
-
-```python
->>> best.os
-```
-
-There are also a few ones that use randomness to find the truth, like this:
-
-```py
->>> best.name
-Guido
->>> best.name
-Gustav
-```
 
 ### Different ways to access items
 
@@ -89,6 +68,37 @@ You can access items through both attribute and item access.
 bestpy
 >>> best["module"]  # Item access
 bestpy
+```
+
+### Hard coded answers
+
+Here's how you can find out some hard coded, fundamental laws of the universe:
+
+```py
+>>> best.year
+1984
+>>> best.phone
+BlackBerry
+```
+
+### Dynamic answers
+
+There are also a few things that may sneakily check your preferences and adjust based on it, like the following.
+You'll get your current OS back, since you obviously have a good taste in what OS you use.
+
+```python
+>>> best.os
+```
+
+### Random answers
+
+There are also a few ones that use randomness to find the truth, from a list of answers.
+
+```py
+>>> best.name
+Guido
+>>> best.name
+Gustav
 ```
 
 If there's something you'd like to see added, feel free to open an issue or submit a PR.
